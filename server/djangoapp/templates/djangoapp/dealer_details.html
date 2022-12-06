@@ -10,9 +10,26 @@
     <body>
 
     <!--Add a nav bar here -->
-
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-text">
+            Dealership Review
+          </span>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="username" placeholder="username" aria-label="username">
+          <input class="form-control mr-sm-2" type="password" placeholder="password" aria-label="password">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <a class="nav-link" href="#">Sign Up<span class="sr-only">(current)</span></a>
+    </nav>
     <!-- Add reviews as cards -->
-
+    <div class="card-columns">
+        <div class="card">
+            <img class="card-img-left" src="static/media/emoji/positive.png">
+        </div>
+        <div class="card">
+            <img class="card-img-left" src="static/media/emoji/negative.png">
+        </div>
+    </div>
     </body>
 
 </html>

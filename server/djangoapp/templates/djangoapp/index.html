@@ -42,7 +42,22 @@
 
       {% endif %}
     <!--Add a dealer table here -->
-
+    <table class="table" id="table">
+        <thead>
+            <tr>
+                <th data-field="id">ID</th>
+                ...
+            </tr>
+        </thead>
+        <tbody>
+            {% for dealer in dealership_list %}
+                <tr>
+                    <td><a href="{% url 'djangoapp:dealer_details' dealer.id %}">{{dealer.full_name}}</a></td>.
+                    ...
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
     </body>
 
 </html>
