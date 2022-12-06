@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dealership Review</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.18.2/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
+
+</head>
+
+    <body>
+    <!-- Remove this line the first time you edit this file -->
+     This is the index page of your Django app!
+    <!--Add a nav bar here -->
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-text">
+            Dealership Review
+          </span>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="username" placeholder="username" aria-label="username">
+          <input class="form-control mr-sm-2" type="password" placeholder="password" aria-label="password">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <a class="nav-link" href="#">Sign Up<span class="sr-only">(current)</span></a>
+    </nav>
+
+      {% if username.is_authenticated %}
+      <nav class="navbar navbar-light bg-light">
+        <span class="navbar-text">
+            Dealership Review
+          </span>
+          <span class="navbar-text">
+            username
+          </span>
+        <a class="nav-link" href="#">Logout<span class="sr-only">(current)</span></a>
+    </nav>
+
+      {% endif %}
+    <!--Add a dealer table here -->
+
+    </body>
+
+</html>
